@@ -19,7 +19,7 @@ mongoose.connect(DB_HOST, () => console.log("BD is connect!!!"));
 const http = require("http").Server(app);
 
 const socket = require("socket.io")(http, {
-  cors: { origin: "http://localhost:3000/" },
+  cors: { origin: "https://front-chat-new-v.onrender.com" },
 });
 
 socket.on("connection", async (client) => {
